@@ -1,0 +1,32 @@
+### use balance
+POST http://localhost:9090/transaction/use
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "1000000002",
+  "amount": 100
+}
+
+### use balance2
+POST http://localhost:9090/transaction/use
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "1000000002",
+  "amount": 100
+}
+
+### cancel balance
+POST http://localhost:9090/transaction/cancel
+Content-Type: application/json
+
+{
+  "transactionId": "7cfee2db979e455ebea347f77704c5e7",
+  "accountNumber": "1000000002",
+  "amount": 30000
+}
+
+### query transaction
+GET http://localhost:9090/transaction/8a2c164aa08f416e9e3dfb74fd909093
